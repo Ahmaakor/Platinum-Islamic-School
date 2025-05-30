@@ -32,7 +32,7 @@
 }
 
 .nav li {
-    position: relative; /* Required for dropdown positioning */
+    position: relative;
 }
 
 .nav a {
@@ -49,7 +49,7 @@
 .nav a:hover,
 .nav a:focus {
     opacity: 0.5;
-    outline: none; /* Optional: manage focus styles for accessibility */
+    outline: none;
 }
 
 /* Dropdown container */
@@ -111,6 +111,6 @@
 .dropdown li a:focus {
     background-color: #f4f4f4;
     color: var(--pis-blue);
-    outline: none; /* Optional: better keyboard focus */
+    outline: none; 
 }
 
