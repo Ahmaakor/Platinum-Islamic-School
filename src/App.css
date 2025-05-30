@@ -1,0 +1,61 @@
+:root {
+    --pis-cream: #f5eebb;
+    --pis-yellow: #faec84;
+    --pis-blue: #12397b;
+    --bs-black: #211f1f;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    background-color: #fff;
+    color: var(--bs-black);
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+    /* border: 1px solid red; */
+    /* for dev only */
+}
+
+/* Responsive Container Widths */
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 990px;
+    }
+}
+
+@media (min-width: 1360px) {
+    .container {
+        max-width: 1100px;
+    }
+}
