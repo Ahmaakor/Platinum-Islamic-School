@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
+import MobileNav from '../MobileNav/MobileNav';
 
 function Header() {
     return (
@@ -52,6 +53,7 @@ function Header() {
                             <li><Link to="/contact">Contact</Link></li>
                         </ul>
                     </nav>
+                    {/* <MobileNav /> */}
                 </div>
             </div>
         </header>

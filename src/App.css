@@ -11,6 +11,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* border: 2px solid red; */
 }
 
 body {
@@ -26,21 +27,8 @@ body {
     margin: 0 auto;
     padding: 0 1rem;
     /* border: 1px solid red; */
-    /* for dev only */
 }
 
-/* Responsive Container Widths */
-@media (min-width: 576px) {
-    .container {
-        max-width: 540px;
-    }
-}
-
-@media (min-width: 768px) {
-    .container {
-        max-width: 720px;
-    }
-}
 
 @media (min-width: 992px) {
     .container {

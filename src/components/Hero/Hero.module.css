@@ -1,8 +1,7 @@
 .hero {
-  background-color: var(--pis-cream);
-  padding: 4rem 0;
-  text-align: center;
-  height: 100vh;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
 }
 
 .container {
@@ -11,15 +10,76 @@
   justify-content: center;
   align-items: center;
   height: 100%;
+  text-align: center;
+}
+
+.slide {
+  position: absolute;
+  /* background-image: url(https://avatars.mds.yandex.net/i?id=2eb9f723baa3f91216387eb393931be4185aa3f9-4464306-images-thumbs&n=13); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transform: scale(1.05);
+  transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 1;
 }
 
 .hero_text h1 {
-  font-size: 2.5rem;
-  color: var(--pis-blue);
+  font-size: 4rem;
+  color: inherit;
   margin-bottom: 1rem;
 }
 
 .hero_text p {
   font-size: 1.25rem;
-  color: var(--bs-black);
+  color: inherit;
+}
+
+
+/* Tablet view */
+@media (max-width: 992px) {
+  .hero {
+    height: 80vh;
+  }
+
+  .hero_text h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero_text p {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+  .hero {
+    height: 70vh;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .hero_text h1 {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .hero_text p {
+    font-size: 1rem;
+  }
 }

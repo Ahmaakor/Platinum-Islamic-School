@@ -1,0 +1,104 @@
+.hamburger {
+    display: none; /* Hidden by default, shown on mobile */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+}
+
+.hamburgerLine {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: var(--pis-blue);
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+.mobileNav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 300px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    padding: 80px 20px 20px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.mobileNav.open {
+    right: 0;
+}
+
+.mobileNav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobileNav li {
+    margin-bottom: 15px;
+}
+
+.mobileNav a {
+    display: block;
+    padding: 10px 15px;
+    color: var(--pis-blue);
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.mobileNav a:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdownButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 15px;
+    background: none;
+    border: none;
+    color: var(--pis-blue);
+    font-size: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.dropdown {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding-left: 15px;
+}
+
+.dropdownParent.active .dropdown {
+    max-height: 500px; /* Adjust based on your content */
+}
+
+/* Show mobile nav on smaller screens */
+@media (max-width: 992px) {
+    .hamburger {
+        display: block;
+    }
+    
+    /* Optional: Add styles for when hamburger is open */
+    .hamburger.open .hamburgerLine:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+    
+    .hamburger.open .hamburgerLine:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .hamburger.open .hamburgerLine:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+}
