@@ -83,16 +83,19 @@
 }
 
 .link_text::after {
-  width: 0%;
-  height: 2px;
+  width: 100%;
+  scale: 0;
+  height: 1px;
   display: block;
   content: '';
   background-color: white;
-  transition: width 0.3s ease;
+  transition: scale 0.3s ease;
+  transform-origin: right;
 }
 
 .hero_btn:hover .link_text::after {
-  width: 100%;
+  scale: 1;
+  transform-origin: left;
 }
 
 @media (max-width: 992px) {
@@ -101,7 +104,7 @@
   }
 
   .hero_content {
-    width: 80%;
+    width: 100%;
   }
 
   .hero_text h1 {
