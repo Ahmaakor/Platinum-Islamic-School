@@ -1,22 +1,37 @@
+// export const slides = [
+//   {
+//     title: 'Welcome To Platinum',
+//     subtitle: 'Ensuring a fulfilled life through comprehensive education and spiritual growth in a nurturing Islamic environment for all students',
+//   },
+//   {
+//     title: 'Faith • Knowledge • Excellence',
+//     subtitle: 'Empowering students spiritually and academically to become well-rounded individuals who contribute positively to society and the ummah',
+//   },
+//   {
+//     title: 'Rooted in Islamic Values',
+//     subtitle: 'Guiding future generations with purpose by combining traditional Islamic teachings with modern educational excellence and character development',
+//   },
+// ];
+
 export const slides = [
   {
-    title: 'Welcome To Platinum',
-    subtitle: 'Ensuring a Fulfilled Life',
-    bgColor: 'var(--pis-cream)',
-    bgImage: 'url(https://i.pinimg.com/736x/c7/20/12/c720124314d0443f234250f0a42d4df8.jpg)',
+    title: 'Discover Our Vision',
+    subtitle: 'At Platinum Academy, we envision a future where students excel academically while maintaining strong Islamic values and moral character in their daily lives',
   },
   {
-    title: 'Faith • Knowledge • Excellence',
-    subtitle: 'Empowering Students Spiritually and Academically',
-    bgColor: 'var(--bs-black)',
-    color: '#fff',  
-    bgImage: 'url(https://avatars.mds.yandex.net/i?id=d426d0987b206702b8fb75f7122b0087409a879e-4237119-images-thumbs&n=13)',
+    title: 'Holistic Education Approach',
+    subtitle: 'Our unique curriculum blends modern academic excellence with traditional Islamic teachings, fostering intellectual growth alongside spiritual development for balanced education',
   },
   {
-    title: 'Rooted in Islamic Values',
-    subtitle: 'Guiding Future Generations with Purpose',
-    bgColor: 'var(--pis-blue)',
-    color: '#fff',  
-    bgImage: 'url(https://i.pinimg.com/736x/38/c2/9f/38c29f4bcdf416467e48aabb0210b3b5.jpg)'
+    title: 'State-of-the-Art Facilities',
+    subtitle: 'Experience learning in our modern classrooms equipped with cutting-edge technology, designed to inspire creativity and facilitate effective teaching and learning processes',
   },
+  {
+    title: 'Qualified Educators',
+    subtitle: 'Our dedicated teaching staff comprises experienced professionals who are passionate about nurturing young minds and instilling lifelong love for learning and faith',
+  },
+  {
+    title: 'Vibrant Student Community',
+    subtitle: 'Join a diverse and supportive student body that encourages personal growth, leadership skills, and meaningful connections through various extracurricular activities',
+  }
 ];

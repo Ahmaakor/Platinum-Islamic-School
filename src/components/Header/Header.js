@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
-import MobileNav from '../MobileNav/MobileNav';
+// import MobileNav from '../MobileNav/MobileNav';
 
 function Header() {
     return (
