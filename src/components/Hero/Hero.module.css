@@ -1,6 +1,6 @@
 .hero {
   height: 90vh;
-  background-image: url(https://storage.myseldon.com/news-pict-f0/F09CCB8BFFFBCE497A1E4406E87EADA0);
+  background-image: url(../../assets/images/heroBackground.jpg);
   background-color: rgba(18, 56, 123, 0.3);
   color: white;
   background-blend-mode: darken;
@@ -8,6 +8,7 @@
   background-position: center;
   background-size: cover;
   padding: 1rem;
+  overflow: hidden;
 }
 
 .container {

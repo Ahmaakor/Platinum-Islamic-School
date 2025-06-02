@@ -30,7 +30,7 @@ function MoreAbout() {
         <section className={styles.more_about}>
             <div className={`${styles.container} container`}>
                 <div className={styles.more_about_text}>
-                    <h1>More About Us</h1>
+                    <h1>About Us</h1>
                     <p>
                         At Platinum Islamic School, we are deeply committed to nurturing well-rounded individuals through a holistic educational approach.
                         Our institution focuses not only on academic excellence but also on moral integrity, spiritual growth, and character development.

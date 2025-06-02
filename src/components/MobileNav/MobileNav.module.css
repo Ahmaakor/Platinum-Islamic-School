@@ -1,20 +1,4 @@
-.hamburger {
-    display: none; /* Hidden by default, shown on mobile */
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 1001;
-}
 
-.hamburgerLine {
-    display: block;
-    width: 25px;
-    height: 2px;
-    background-color: var(--pis-blue);
-    margin: 5px 0;
-    transition: all 0.3s ease;
-}
 
 .mobileNav {
     position: fixed;
@@ -80,25 +64,11 @@
 }
 
 .dropdownParent.active .dropdown {
-    max-height: 500px; /* Adjust based on your content */
+    max-height: 500px;
 }
 
-/* Show mobile nav on smaller screens */
 @media (max-width: 992px) {
     .hamburger {
         display: block;
-    }
-    
-    /* Optional: Add styles for when hamburger is open */
-    .hamburger.open .hamburgerLine:nth-child(1) {
-        transform: translateY(7px) rotate(45deg);
-    }
-    
-    .hamburger.open .hamburgerLine:nth-child(2) {
-        opacity: 0;
-    }
-    
-    .hamburger.open .hamburgerLine:nth-child(3) {
-        transform: translateY(-7px) rotate(-45deg);
     }
 }

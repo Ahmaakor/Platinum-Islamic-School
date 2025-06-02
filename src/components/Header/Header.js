@@ -1,17 +1,21 @@
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
 // import MobileNav from '../MobileNav/MobileNav';
 
 function Header() {
+    const [isOpen, setIsOpen] = useState(false)
     return (
         <header className={styles.header} id="main-header">
             <div className="container">
                 <div className={styles.navbar}>
                     <h1 className={styles.logo}>PIS</h1>
+
                     <nav className={styles.nav} aria-label="Main navigation">
                         <ul>
+
                             <li className={styles.dropdownParent}>
-                                <Link to="/" aria-haspopup="true">
+                                <Link to="#" aria-haspopup="true">
                                     About <ion-icon name="chevron-down-outline" aria-hidden="true" />
                                 </Link>
                                 <ul className={styles.dropdown}>
@@ -24,7 +28,7 @@ function Header() {
                             </li>
 
                             <li className={styles.dropdownParent}>
-                                <Link to="/academics" aria-haspopup="true">
+                                <Link to="#" aria-haspopup="true">
                                     Academics <ion-icon name="chevron-down-outline" aria-hidden="true" />
                                 </Link>
                                 <ul className={styles.dropdown}>
@@ -32,27 +36,49 @@ function Header() {
                                     <li><Link to="/preschool">Pre-School</Link></li>
                                     <li><Link to="/primary">Primary School</Link></li>
                                     <li><Link to="/secondary">Secondary School</Link></li>
-                                    <li><Link to="/islamic-studies">Islamic Studies</Link></li>
                                 </ul>
                             </li>
 
                             <li className={styles.dropdownParent}>
-                                <Link to="/admission" aria-haspopup="true">
+                                <Link to="#" aria-haspopup="true">
                                     Admission <ion-icon name="chevron-down-outline" aria-hidden="true" />
                                 </Link>
                                 <ul className={styles.dropdown}>
-                                    <li><Link to="/how-to-apply">How to Apply</Link></li>
-                                    <li><Link to="/requirements">Requirements</Link></li>
+                                    <li><Link to="/steps&requirements">Steps & Requirements</Link></li>
                                     <li><Link to="/fees">Fee Structure</Link></li>
-                                    <li><Link to="/scholarships">Scholarships</Link></li>
                                     <li><Link to="/faqs">FAQs</Link></li>
+                                    <li><Link to="/admission">Application</Link></li>
                                 </ul>
                             </li>
 
-                            <li><Link to="/gallery">Gallery</Link></li>
+                            <li className={styles.dropdownParent}>
+                                <Link to="#" aria-haspopup="true">
+                                    Gallery <ion-icon name="chevron-down-outline" aria-hidden="true" />
+                                </Link>
+                                <ul className={styles.dropdown}>
+                                    <li><Link to="/image-gallery">Image</Link></li>
+                                    <li><Link to="/video-gallery">Video</Link></li>
+                                </ul>
+                            </li>
+
+                            <li><Link to="/events">Events</Link></li>
+                            <li><Link to="/blog">Blog</Link></li>
                             <li><Link to="/contact">Contact</Link></li>
+
                         </ul>
                     </nav>
+
+                    <a
+                        className={styles.hamburger}
+                        onClick={() => setIsOpen(!isOpen)}
+                        aria-expanded={isOpen}
+                        aria-label="Toggle navigation"
+                    >
+                        <span className={styles.hamburger_icon}>
+                            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+                        </span>
+                    </a>
+
                     {/* <MobileNav /> */}
                 </div>
             </div>
