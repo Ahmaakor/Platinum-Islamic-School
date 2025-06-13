@@ -9,7 +9,7 @@ function MobileNav() {
         <>
             <div className={`${styles.mobileNav} ${isOpen ? styles.open : ''}`}>
                 <nav className={styles.nav} aria-label="Mobile navigation">
-                        <ul>
+                        <ul> 
 
                             <li className={styles.dropdownParent}>
                                 <Link to="#" aria-haspopup="true">

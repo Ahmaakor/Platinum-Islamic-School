@@ -56,8 +56,9 @@
 .nav a:hover,
 .nav a:focus {
     outline: none;
-    color: white;
-    background-color: var(--pis-blue);
+    /* color: white; */
+    /* background-color: var(--pis-blue); */
+    background-color: #f0f8ff;
 }
 
 .dropdownParent {

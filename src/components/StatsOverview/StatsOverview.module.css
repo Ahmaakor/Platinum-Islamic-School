@@ -1,7 +1,5 @@
 .stats_overview {
-    /* background-color: var(--pis-cream, #fef6e4); */
-    /* background-color: black; */
-    background-color: var(--pis-blue);
+    background-color: var(--pis-cream, #fef6e4);
     padding: 4rem 1rem;
 }
 
@@ -15,9 +13,9 @@
 }
 
 .card {
-    /* background-color: #fff; */
-    background-color: var(--pis-cream);
-    border-radius: 0.75rem;
+    color: #fff;
+    background-color: var(--pis-blue);
+    border-radius: 0.5rem;
     padding: 2rem 1.5rem;
     text-align: center;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
@@ -30,20 +28,20 @@
 
 .card_icon {
     font-size: 2.5rem;
-    color: var(--pis-blue, #003466);
+    color: var(--pis-blue-light);
     margin-bottom: 1rem;
 }
 
 .card h1 {
     font-size: 1.2rem;
-    color: #333;
+    color: var(--pis-blue-light);
     margin-bottom: 0.5rem;
 }
 
 .count .number {
     font-size: 1.75rem;
     font-weight: 600;
-    color: var(--bs-black, #000);
+    color: var(--pis-orange);
 }
 
 /* Tablet view: 3 fixed columns */

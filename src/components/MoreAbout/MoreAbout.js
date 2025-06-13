@@ -31,7 +31,7 @@ function MoreAbout() {
     return (
         <section className={styles.more_about}>
             <div className={`${styles.container} container`}>
-                <div className={styles.more_about_text}>
+                <div className={styles.more_about_text} data-aos="fade-right">
                     <h1>About Us</h1>
                     <p>
                         At Platinum Islamic School, we are deeply committed to nurturing well-rounded individuals through a holistic educational approach.
@@ -45,7 +45,7 @@ function MoreAbout() {
                     </p>
                 </div>
 
-                <div className={styles.more_about_image}>
+                <div className={styles.more_about_image} data-aos="fade-left">
                     {images.map((src, i) => (
                         <div
                             key={i}

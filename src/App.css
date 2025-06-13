@@ -2,7 +2,16 @@
     --pis-cream: #f5eebb;
     --pis-yellow: #faec84;
     --pis-blue: #12397b;
+    --pis-blue-dark: #0d254a;
+    --pis-blue-light: #e6eef9;
+    --pis-orange: #ff8906;
+    --pis-shadow: rgba(18, 57, 123, 0.08);
     --bs-black: #211f1f;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --text-primary: var(--bs-black);
+    --text-secondary: var(--bs-gray);
+    --border-radius: 0.5rem;
 }
 
 *,
@@ -15,7 +24,7 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', 'Nunito Sans', Helvetica, Arial, "Noto Sans", sans-serif;
     font-size: 14px;
     background-color: #fff;
     color: var(--bs-black);

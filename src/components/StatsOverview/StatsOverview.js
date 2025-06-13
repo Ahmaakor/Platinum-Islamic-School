@@ -5,7 +5,7 @@
 //     <div className={styles.stats_overview}>
 //       <div className={`${styles.container} container`}>
 
-//         <div className={styles.card}>
+//         <div className={styles.card} data-aos="fade-up">
 //           <div className={styles.card_icon}>
 //             <ion-icon name="time-outline"></ion-icon>
 //           </div>
@@ -15,7 +15,7 @@
 //           </div>
 //         </div>
 
-//         <div className={styles.card}>
+//         <div className={styles.card} data-aos="fade-up">
 //           <div className={styles.card_icon}>
 //             <ion-icon name="people-outline"></ion-icon>
 //           </div>
@@ -25,7 +25,7 @@
 //           </div>
 //         </div>
 
-//         <div className={styles.card}>
+//         <div className={styles.card} data-aos="fade-up">
 //           <div className={styles.card_icon}>
 //             <ion-icon name="person-outline"></ion-icon>
 //           </div>
@@ -35,7 +35,7 @@
 //           </div>
 //         </div>
 
-//         <div className={styles.card}>
+//         <div className={styles.card} data-aos="fade-up">
 //           <div className={styles.card_icon}>
 //             <ion-icon name="checkmark-circle-outline"></ion-icon>
 //           </div>
@@ -103,7 +103,7 @@ function StatsOverview() {
     return (
         <div className={styles.stats_overview}>
             <div className={`${styles.container} container`}>
-                <div className={styles.card}>
+                <div className={styles.card} data-aos="fade-up">
                     <div className={styles.card_icon}>
                         <ion-icon name="time-outline"></ion-icon>
                     </div>
@@ -112,7 +112,7 @@ function StatsOverview() {
                         <AnimatedCounter target="9" />
                     </div>
                 </div>
-                <div className={styles.card}>
+                <div className={styles.card} data-aos="fade-up">
                     <div className={styles.card_icon}>
                         <ion-icon name="people-outline"></ion-icon>
                     </div>
@@ -121,7 +121,7 @@ function StatsOverview() {
                         <AnimatedCounter target="200" suffix="+" />
                     </div>
                 </div>
-                <div className={styles.card}>
+                <div className={styles.card} data-aos="fade-up">
                     <div className={styles.card_icon}>
                         <ion-icon name="person-outline"></ion-icon>
                     </div>
@@ -130,7 +130,7 @@ function StatsOverview() {
                         <AnimatedCounter target="20" suffix="+" />
                     </div>
                 </div>
-                <div className={styles.card}>
+                <div className={styles.card} data-aos="fade-up">
                     <div className={styles.card_icon}>
                         <ion-icon name="checkmark-circle-outline"></ion-icon>
                     </div>

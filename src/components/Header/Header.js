@@ -4,7 +4,7 @@ import styles from './Header.module.css';
 // import MobileNav from '../MobileNav/MobileNav';
 
 function Header() {
-    const [isOpen, setIsOpen] = useState(false)
+    // const [isOpen, setIsOpen] = useState(false);
     return (
         <header className={styles.header} id="main-header">
             <div className="container">
@@ -70,8 +70,8 @@ function Header() {
 
                     <a
                         className={styles.hamburger}
-                        onClick={() => setIsOpen(!isOpen)}
-                        aria-expanded={isOpen}
+                        // onClick={() => setIsOpen(!isOpen)}
+                        // aria-expanded={isOpen}
                         aria-label="Toggle navigation"
                     >
                         <span className={styles.hamburger_icon}>
