@@ -9,7 +9,7 @@ function Header() {
         <header className={styles.header} id="main-header">
             <div className="container">
                 <div className={styles.navbar}>
-                    <h1 className={styles.logo}>PIS</h1>
+                    <Link className={styles.logo}>PIS</Link>
 
                     <nav className={styles.nav} aria-label="Main navigation">
                         <ul>
@@ -62,8 +62,8 @@ function Header() {
                             </li>
 
                             <li><Link to="/events">Events</Link></li>
-                            <li><Link to="/blog">Blog</Link></li>
-                            <li><Link to="/contact">Contact</Link></li>
+                            <li><Link to="/blog">Blogs</Link></li>
+                            <li><Link id={styles.contact} to="/contact"> <span>Contact</span></Link></li>
 
                         </ul>
                     </nav>
@@ -75,7 +75,7 @@ function Header() {
                         aria-label="Toggle navigation"
                     >
                         <span className={styles.hamburger_icon}>
-                            <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+                            <ion-icon name="menu" aria-hidden="true"></ion-icon>
                         </span>
                     </a>
 

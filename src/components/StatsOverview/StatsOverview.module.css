@@ -1,5 +1,7 @@
 .stats_overview {
-    background-color: var(--pis-cream, #fef6e4);
+    /* background-color: var(--pis-cream, #fef6e4); */
+    /* background-color: black; */
+    background-color: var(--pis-blue);
     padding: 4rem 1rem;
 }
 
@@ -13,12 +15,10 @@
 }
 
 .card {
-    min-width: 200px;
-    max-width: 220px;
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-color: var(--pis-cream);
     border-radius: 0.75rem;
     padding: 2rem 1.5rem;
-    margin: auto;
     text-align: center;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;

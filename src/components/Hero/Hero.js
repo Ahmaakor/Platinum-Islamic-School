@@ -16,20 +16,22 @@ function Hero() {
   return (
     <section className={styles.hero}>
       <div className={`${styles.container} container`}>
-        <div className={styles.hero_content}>
-          {slides.map((slide, index) => (
-            <div key={index} className={`${styles.slide} ${index === current ? styles.active : ''}`}>
-              <div className={styles.hero_text}>
-                <h1>{slide.title}</h1>
-                <p>{slide.subtitle}</p>
+        <div className={styles.cont} >
+          <div className={styles.hero_content}>
+            {slides.map((slide, index) => (
+              <div key={index} className={`${styles.slide} ${index === current ? styles.active : ''}`}>
+                <div className={styles.hero_text}>
+                  <h1>{slide.title}</h1>
+                  <p>{slide.subtitle}</p>
+                </div>
               </div>
-              <Link to="/admissions" className={styles.hero_btn}>
-                <span className={styles.icon}> <ion-icon name="chevron-forward-outline"></ion-icon></span>
-                <span className={styles.link_text}>Apply Now</span>
-              </Link>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+          <Link to="/admissions" className={styles.hero_btn}>
+            <span className={styles.icon}> <ion-icon name="chevron-forward-outline"></ion-icon></span>
+            <span className={styles.link_text}>Apply Now</span>
+          </Link>
+          </div>
       </div>
     </section>
   );
