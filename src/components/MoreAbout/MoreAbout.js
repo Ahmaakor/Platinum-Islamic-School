@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Modal from 'react-modal';
 import styles from './MoreAbout.module.css';
 import image3 from '../../assets/images/image1.jpg'
+import { data } from 'react-router-dom';
 
 Modal.setAppElement('#root'); // Ensure this matches your root div ID
 
@@ -28,6 +29,14 @@ function MoreAbout() {
         "https://avatars.mds.yandex.net/i?id=47c75b7c7e2892498d004be67fa286c26d5d54e7-9148169-images-thumbs&n=13"
     ];
 
+    const aosAnimations = [
+        "fade-right",
+        "fade-down",
+        "fade-up",
+        "zoom-in",
+        "fade-left"
+    ];
+
     return (
         <section className={styles.more_about}>
             <div className={`${styles.container} container`}>
@@ -51,6 +60,7 @@ function MoreAbout() {
                             key={i}
                             className={`${styles.image_container} ${styles['img' + (i + 1)]}`}
                             onClick={() => openLightbox(src)}
+                            data-aos={aosAnimations[i] || "fade-up"}
                         >
                             <img src={src} alt="More About Us" />
                         </div>
