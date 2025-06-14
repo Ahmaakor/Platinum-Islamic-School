@@ -135,7 +135,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: 60vw;
+    width: 80vw;
     max-width: 340px;
     height: 100vh;
     background: linear-gradient(135deg, var(--pis-blue-light) 0%, var(--pis-cream) 100%);
