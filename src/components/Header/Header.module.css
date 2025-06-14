@@ -108,8 +108,8 @@
 
 .dropdown li a:hover,
 .dropdown li a:focus {
-    color: white;
-    background-color: var(--pis-blue);
+    /* color: white; */
+    background-color: var(--pis-yellow);
     outline: none; 
 }
 
