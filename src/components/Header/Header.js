@@ -1,10 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
-// import MobileNav from '../MobileNav/MobileNav';
+import MobileNav from '../MobileNav/MobileNav';
 
 function Header() {
-    // const [isOpen, setIsOpen] = useState(false);
+    const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+
+    const toggleMobileNav = () => {
+        setIsMobileNavOpen(!isMobileNavOpen);
+    };
+
+    const closeMobileNav = () => {
+        setIsMobileNavOpen(false);
+    };
+
     return (
         <header className={styles.header} id="main-header">
             <div className="container">
@@ -70,16 +79,17 @@ function Header() {
 
                     <a
                         className={styles.hamburger}
-                        // onClick={() => setIsOpen(!isOpen)}
-                        // aria-expanded={isOpen}
+                        onClick={toggleMobileNav}
+                        aria-expanded={isMobileNavOpen}
                         aria-label="Toggle navigation"
+                        href='#'
                     >
                         <span className={styles.hamburger_icon}>
                             <i className="fa-solid fa-bars" aria-hidden="true"></i>
                         </span>
                     </a>
 
-                    {/* <MobileNav /> */}
+                    {isMobileNavOpen && <MobileNav close={closeMobileNav}/>}
                 </div>
             </div>
         </header>

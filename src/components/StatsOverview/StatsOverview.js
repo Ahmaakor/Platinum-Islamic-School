@@ -132,7 +132,7 @@ function StatsOverview() {
                 </div>
                 <div className={styles.card} data-aos="fade-up">
                     <div className={styles.card_icon}>
-                        <i class="fa-solid fa-trophy"></i>
+                        <i class="fa-solid fa-award"></i>
                     </div>
                     <h4>Success Rate</h4>
                     <div className={styles.count}>

@@ -24,10 +24,11 @@
 }
 
 body {
-    font-family: 'Montserrat', 'Nunito Sans', Helvetica, Arial, "Noto Sans", sans-serif;
-    font-size: 14px;
     background-color: #fff;
     color: var(--bs-black);
+    overflow-x: hidden;
+    font-size: 14px;
+    font-family: 'Montserrat', 'Nunito Sans', Helvetica, Arial, "Noto Sans", sans-serif;
     line-height: 1.6;
 }
 
