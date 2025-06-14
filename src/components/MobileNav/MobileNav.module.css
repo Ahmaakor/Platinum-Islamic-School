@@ -99,7 +99,7 @@
     color: var(--pis-blue-dark);
     text-decoration: none;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.2rem;
     flex-grow: 1;
 }
 
@@ -108,7 +108,6 @@
     color: var(--pis-blue);
     background: rgba(255, 255, 255, 0.5);
     outline: none;
-    border: none;
 }
 
 .chevronButton {
@@ -145,7 +144,7 @@
     color: var(--pis-blue);
     text-decoration: none;
     border-radius: 8px;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     transition: all 0.2s;
 }
 
@@ -167,10 +166,10 @@
     }
     
     .menuLink {
-        font-size: 0.95rem;
+        font-size: 1.1rem;
     }
     
     .dropdown a {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 }
