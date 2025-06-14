@@ -92,7 +92,7 @@ function MoreAbout() {
                 }}
             >
                 <div className={styles.close_button} onClick={closeLightbox}>
-                    <ion-icon name="close-outline"></ion-icon>
+                    <i className="fa-solid fa-xmark"></i>
                 </div>
                 <img src={modalImage} alt="Zoomed" style={{ maxWidth: '100%', maxHeight: '90vh', borderRadius: '12px' }} />
             </Modal>

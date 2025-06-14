@@ -34,7 +34,7 @@ function Hero() {
             ))} */}
           </div>
           <Link to="/admissions" className={styles.hero_btn}>
-            <span className={styles.icon}> <ion-icon name="chevron-forward-outline"></ion-icon></span>
+            <span className={styles.icon}> <i className="fa-solid fa-chevron-right"></i></span>
             <span className={styles.link_text}>Apply Now</span>
           </Link>
           </div>

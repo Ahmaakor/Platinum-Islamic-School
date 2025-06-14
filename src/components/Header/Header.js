@@ -16,7 +16,7 @@ function Header() {
 
                             <li className={styles.dropdownParent}>
                                 <Link to="#" aria-haspopup="true">
-                                    About <ion-icon name="chevron-down-outline" aria-hidden="true" />
+                                    About <i className="fa-solid fa-chevron-down" aria-hidden="true"></i>
                                 </Link>
                                 <ul className={styles.dropdown}>
                                     <li><Link to="/overview">Overview</Link></li>
@@ -29,7 +29,7 @@ function Header() {
 
                             <li className={styles.dropdownParent}>
                                 <Link to="#" aria-haspopup="true">
-                                    Academics <ion-icon name="chevron-down-outline" aria-hidden="true" />
+                                    Academics <i className="fa-solid fa-chevron-down" aria-hidden="true"></i>
                                 </Link>
                                 <ul className={styles.dropdown}>
                                     <li><Link to="/curriculum">Curriculum</Link></li>
@@ -41,7 +41,7 @@ function Header() {
 
                             <li className={styles.dropdownParent}>
                                 <Link to="#" aria-haspopup="true">
-                                    Admission <ion-icon name="chevron-down-outline" aria-hidden="true" />
+                                    Admission <i className="fa-solid fa-chevron-down" aria-hidden="true"></i>
                                 </Link>
                                 <ul className={styles.dropdown}>
                                     <li><Link to="/steps&requirements">Steps & Requirements</Link></li>
@@ -53,7 +53,7 @@ function Header() {
 
                             <li className={styles.dropdownParent}>
                                 <Link to="#" aria-haspopup="true">
-                                    Gallery <ion-icon name="chevron-down-outline" aria-hidden="true" />
+                                    Gallery <i className="fa-solid fa-chevron-down" aria-hidden="true"></i>
                                 </Link>
                                 <ul className={styles.dropdown}>
                                     <li><Link to="/image-gallery">Image</Link></li>
@@ -75,7 +75,7 @@ function Header() {
                         aria-label="Toggle navigation"
                     >
                         <span className={styles.hamburger_icon}>
-                            <ion-icon name="menu" aria-hidden="true"></ion-icon>
+                            <i className="fa-solid fa-bars" aria-hidden="true"></i>
                         </span>
                     </a>
 

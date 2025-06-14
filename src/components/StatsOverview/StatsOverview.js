@@ -7,9 +7,9 @@
 
 //         <div className={styles.card} data-aos="fade-up">
 //           <div className={styles.card_icon}>
-//             <ion-icon name="time-outline"></ion-icon>
+//             <i className="fa-regular fa-clock"></i>
 //           </div>
-//           <h1>Years Experience</h1>
+//           <h4>Years Experience</h4>
 //           <div className={styles.count}>
 //             <span className={styles.number}>09</span>
 //           </div>
@@ -17,9 +17,9 @@
 
 //         <div className={styles.card} data-aos="fade-up">
 //           <div className={styles.card_icon}>
-//             <ion-icon name="people-outline"></ion-icon>
+//             <i className="fa-solid fa-users"></i>
 //           </div>
-//           <h1>Students</h1>
+//           <h4>Students</h4>
 //           <div className={styles.count}>
 //             <span className={styles.number}>200+</span>
 //           </div>
@@ -27,9 +27,9 @@
 
 //         <div className={styles.card} data-aos="fade-up">
 //           <div className={styles.card_icon}>
-//             <ion-icon name="person-outline"></ion-icon>
+//             <i className="fa-solid fa-chalkboard-teacher"></i>
 //           </div>
-//           <h1>Teachers</h1>
+//           <h4>Teachers</h4>
 //           <div className={styles.count}>
 //             <span className={styles.number}>20+</span>
 //           </div>
@@ -37,9 +37,9 @@
 
 //         <div className={styles.card} data-aos="fade-up">
 //           <div className={styles.card_icon}>
-//             <ion-icon name="checkmark-circle-outline"></ion-icon>
+//             <i class="fa-regular fa-percent"></i>
 //           </div>
-//           <h1>Success Rate</h1>
+//           <h4>Success Rate</h4>
 //           <div className={styles.count}>
 //             <span className={styles.number}>80%</span>
 //           </div>
@@ -105,36 +105,36 @@ function StatsOverview() {
             <div className={`${styles.container} container`}>
                 <div className={styles.card} data-aos="fade-up">
                     <div className={styles.card_icon}>
-                        <ion-icon name="time-outline"></ion-icon>
+                        <i className="fa-regular fa-clock"></i>
                     </div>
-                    <h1>Year Experience</h1>
+                    <h4>Year Experience</h4>
                     <div className={styles.count}>
                         <AnimatedCounter target="9" />
                     </div>
                 </div>
                 <div className={styles.card} data-aos="fade-up">
                     <div className={styles.card_icon}>
-                        <ion-icon name="people-outline"></ion-icon>
+                        <i className="fa-solid fa-users"></i>
                     </div>
-                    <h1>Students</h1>
+                    <h4>Students</h4>
                     <div className={styles.count}>
-                        <AnimatedCounter target="200" suffix="+" />
+                        <AnimatedCounter target="250" suffix="+" />
                     </div>
                 </div>
                 <div className={styles.card} data-aos="fade-up">
                     <div className={styles.card_icon}>
-                        <ion-icon name="person-outline"></ion-icon>
+                        <i className="fa-solid fa-chalkboard-teacher"></i>
                     </div>
-                    <h1>Teachers</h1>
+                    <h4>Staff</h4>
                     <div className={styles.count}>
                         <AnimatedCounter target="20" suffix="+" />
                     </div>
                 </div>
                 <div className={styles.card} data-aos="fade-up">
                     <div className={styles.card_icon}>
-                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                        <i class="fa-solid fa-trophy"></i>
                     </div>
-                    <h1>Success Rate</h1>
+                    <h4>Success Rate</h4>
                     <div className={styles.count}>
                         <AnimatedCounter target="80" suffix="%" />
                     </div>

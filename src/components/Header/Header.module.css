@@ -56,9 +56,8 @@
 .nav a:hover,
 .nav a:focus {
     outline: none;
-    /* color: white; */
-    /* background-color: var(--pis-blue); */
-    background-color: #f0f8ff;
+    color: var(--pis-blue-dark);
+    background-color: #f3f4f5;
 }
 
 .dropdownParent {
@@ -167,11 +166,26 @@
     color: var(--pis-blue);
 }
 
+.navbar .hamburger:hover {
+    color: var(--pis-blue-dark);
+}
+
+.hamburger .hamburger_icon {
+    display: flex;
+    height: fit-content;
+    border-radius: 2px;
+    position: relative;
+}
+
 @media (max-width: 992px) {
+    .header {
+        padding: 0.5rem 1rem;
+    }
     .nav {
         display: none;
     }
     .hamburger {
-        display: block;
+        display: flex;
+        cursor: pointer;
     }
 }
