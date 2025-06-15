@@ -23,9 +23,8 @@
 }
 
 .post:hover {
-    transform: translateY(-8px);
+    transform: translateY(-4px);
     box-shadow: 0 8px 32px rgba(250, 236, 132, 0.18);
-    /* background: #fffbe6; */
 }
 
 .postImg {
@@ -53,7 +52,7 @@
     margin: 0.5rem 0 0.3rem 0;
     color: var(--pis-blue);
     font-size: 1.1rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .post span {
@@ -81,5 +80,22 @@
 .post p {
     color: var(--bs-gray);
     font-size: 0.97rem;
-    margin: 0;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 900px) {
+    .posts {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem;
+    }
+    .postImg {
+        height: 12rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .posts {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+    }
 }

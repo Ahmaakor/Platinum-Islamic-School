@@ -5,8 +5,8 @@
 
 .reasons {
     display: flex;
-    gap: 2rem;
-    justify-content: center;
+    gap: 1rem;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 2rem;
 }

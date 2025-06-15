@@ -1,5 +1,6 @@
 import styles from './BlogsNews.module.css';
 import { posts } from '../../data/blog';
+import { Link } from 'react-router-dom';
 
 function BlogsNews() {
 
@@ -11,8 +12,8 @@ function BlogsNews() {
     ];
 
     return (
-        <section className={styles.blogsNews} data-aos="fade-up">
-            <div className="container">
+        <section className={styles.blogsNews}>
+            <div className="container" data-aos="fade-up">
                 <h2>Latest News</h2>
                 <div className={styles.posts}>
                     {posts.map((post, i) => (
@@ -29,6 +30,7 @@ function BlogsNews() {
                                     <i className="fa-solid fa-calendar-days"></i> {post.date}
                                 </span>
                                 <p>{post.excerpt}</p>
+                                <Link to="#" className='pri_btn'>Read More</Link>
                             </div>
                         </div>
                     ))}
