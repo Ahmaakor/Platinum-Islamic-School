@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Modal from 'react-modal';
 import styles from './MoreAbout.module.css';
 import image3 from '../../assets/images/image1.jpg'
-import { data } from 'react-router-dom';
+// import { data } from 'react-router-dom';
 
 Modal.setAppElement('#root'); // Ensure this matches your root div ID
 

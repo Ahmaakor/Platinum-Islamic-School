@@ -30,10 +30,11 @@
 .postImg {
     overflow: hidden;
     width: 100%;
-    height: 15rem;
+    height: 11rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    background: #eee;
 }
 
 .postImg img {
@@ -58,7 +59,7 @@
 .post span {
     display: flex;
     align-items: center;
-    color: var(--pis-orange);
+    color: var(--pis-text-muted);
     font-weight: 600;
     margin-bottom: 0.5rem;
     gap: 0.5rem;

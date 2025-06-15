@@ -5,9 +5,13 @@
     --pis-blue-dark: #0d254a;
     --pis-blue-light: #e6eef9;
     --pis-orange: #ff8906;
-    --pis-shadow: rgba(18, 57, 123, 0.08);
+    --pis-shadow: rgba(0,0,0,0.08);
     --bs-black: #211f1f;
     --bs-white: #fff;
+    --pis-bg-light: #f5f7fa;
+    --pis-text-dark: #222;
+    --pis-text-muted: #888;
+    --pis-text: #444;
     --bs-gray: #6c757d;
     --bs-light-gray: #f9f9f9;
     --text-primary: var(--bs-black);
@@ -50,8 +54,12 @@ body {
 }
 
 .pri_btn:hover{
-  background-color: var(--pis-blue-light);
+  background-color: var(--pis-yellow);
   color: var(--pis-blue);
+}
+
+.stars {
+  font-size: 1.2rem;
 }
 
 

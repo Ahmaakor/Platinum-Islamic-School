@@ -1,15 +1,15 @@
 import styles from './BlogsNews.module.css';
 import { posts } from '../../data/blog';
 import { Link } from 'react-router-dom';
+import placeholder from "../../assets/images/logo/pis-icon-white.png"
 
 function BlogsNews() {
 
-    // Example icons for each post (could be improved with real images or icons)
-    const icons = [
-        "fa-solid fa-calendar-days",
-        "fa-solid fa-trophy",
-        "fa-solid fa-people-group"
-    ];
+    // const icons = [
+    //     "fa-solid fa-calendar-days",
+    //     "fa-solid fa-trophy",
+    //     "fa-solid fa-people-group"
+    // ];
 
     return (
         <section className={styles.blogsNews}>
@@ -22,6 +22,7 @@ function BlogsNews() {
                                 <img
                                     src={post.image}
                                     alt={post.title}
+                                    onError={e => { e.target.onerror = null; e.target.src = placeholder; }}
                                 />
                             </div>
                             <div className={styles.down} >

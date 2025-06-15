@@ -1,11 +1,9 @@
 import styles from './Events.module.css';
+import { events } from '../../data/events';
+import placeholder from "../../assets/images/logo/pis-icon-white.png"
+import { Link } from 'react-router-dom';
 
 function Events() {
-  const events = [
-    { name: "Open Day", date: "July 10, 2025", desc: "Tour our school and meet the staff." },
-    { name: "Eid Celebration", date: "August 1, 2025", desc: "Join us for a festive Eid event." },
-    { name: "Science Fair", date: "September 15, 2025", desc: "Students showcase their science projects." },
-  ];
 
   return (
     <section className={styles.events} data-aos="fade-up">
@@ -14,9 +12,19 @@ function Events() {
         <div className={styles.eventList}>
           {events.map((e, i) => (
             <div key={i} className={styles.eventCard}>
-              <h4>{e.name}</h4>
-              <span>{e.date}</span>
-              <p>{e.desc}</p>
+              <div className={styles.eventImg}>
+                <img
+                  src={e.image}
+                  alt={e.name}
+                  onError={ev => { ev.target.onerror = null; ev.target.src = placeholder; }}
+                />
+              </div>
+              <div className={styles.eventBody}>
+                <h4>{e.name}</h4>
+                <span>{e.date}</span>
+                <p>{e.desc}</p>
+                <Link to="#" className={styles.learnMoreBtn}>Learn More</Link>
+              </div>
             </div>
           ))}
         </div>

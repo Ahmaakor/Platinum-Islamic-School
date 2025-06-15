@@ -1,10 +1,11 @@
+import { Link } from 'react-router-dom';
 import styles from './Footer.module.css';
 import logo from '../../assets/images/logo/pis-logo-cream.png'
 
 function Footer() {
   return (
-    <footer className={styles.footer}>
-      <div className="container">
+    <footer className={styles.footer} >
+      <div className="container"  data-aos="fade-up">
         <div className={styles.top}>
           <div className={styles.school}>
             <img src={logo} alt="Platinum Islamic School Logo" />
@@ -25,31 +26,31 @@ function Footer() {
           <div className={styles.links}>
             <h3>Quick Links</h3>
             <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Curriculum</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Events</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><Link to="/">About</Link></li>
+              <li><Link to="/">Curriculum</Link></li>
+              <li><Link to="/">Blog</Link></li>
+              <li><Link to="/">Events</Link></li>
+              <li><Link to="/">Contact</Link></li>
             </ul>
           </div>
 
           <div className={styles.links}>
             <h3>About</h3>
             <ul>
-              <li><a href="#">Overview</a></li>
-              <li><a href="#">Mission/Vision</a></li>
-              <li><a href="#">Branches</a></li>
-              <li><a href="#">Core Value</a></li>
+              <li><Link to="/">Overview</Link></li>
+              <li><Link to="/">Mission/Vision</Link></li>
+              <li><Link to="/">Branches</Link></li>
+              <li><Link to="/">Core Value</Link></li>
             </ul>
           </div>
 
           <div className={styles.links}>
             <h3>Addmission</h3>
             <ul>
-              <li><a href="#">Steps & Requirements</a></li>
-              <li><a href="#">School Fee</a></li>
-              <li><a href="#">Application</a></li>
-              <li><a href="#">FAQs</a></li>
+              <li><Link to="/">Steps & Requirements</Link></li>
+              <li><Link to="/">School Fee</Link></li>
+              <li><Link to="/">Application</Link></li>
+              <li><Link to="/">FAQs</Link></li>
             </ul>
           </div>
 
@@ -65,7 +66,7 @@ function Footer() {
         <div className={styles.bottom}>
           <p>All Rights Reserved</p>
           <div>
-            <a href="#">Terms of use</a> | <a href="#">Privacy policy</a>
+            <a href='term'>Terms of use</a> | <a href="/">Privacy policy</a>
           </div>
         </div>
       </div>

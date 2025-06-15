@@ -4,7 +4,7 @@ import AOS from 'aos';
 import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import Header from './components/Header/Header';
+// import Header from './components/Header/Header';
 
 function App() {
   useEffect(() => {
