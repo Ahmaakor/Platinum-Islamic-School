@@ -1,0 +1,30 @@
+.whyChooseUs {
+    padding: 3rem 0;
+    background: var(--bs-white);
+}
+
+.reasons {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.reason {
+    background: var(--bs-light-gray);
+    border-radius: 8px;
+    padding: 1.5rem;
+    max-width: 250px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.reason i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--pis-blue-dark);
+}
+
+.reason h4{
+    margin-bottom: 0.5rem;
+}

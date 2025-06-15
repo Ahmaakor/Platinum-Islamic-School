@@ -1,0 +1,27 @@
+.events {
+    padding: 3rem 0;
+    background: #fff;
+    text-align: center;
+}
+
+.eventList {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+.eventCard {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 1.5rem;
+    max-width: 250px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.eventCard span {
+    display: block;
+    color: #888;
+    margin-bottom: 0.5rem;
+}

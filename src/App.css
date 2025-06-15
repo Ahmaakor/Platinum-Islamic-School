@@ -9,6 +9,7 @@
     --bs-black: #211f1f;
     --bs-white: #fff;
     --bs-gray: #6c757d;
+    --bs-light-gray: #f9f9f9;
     --text-primary: var(--bs-black);
     --text-secondary: var(--bs-gray);
     --border-radius: 0.5rem;

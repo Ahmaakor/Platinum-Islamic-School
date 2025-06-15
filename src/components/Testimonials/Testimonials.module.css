@@ -1,0 +1,21 @@
+.testimonials {
+  padding: 3rem 0;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.testimonialList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.testimonialCard {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+  max-width: 300px;
+}
