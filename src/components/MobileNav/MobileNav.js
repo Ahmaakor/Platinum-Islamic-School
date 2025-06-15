@@ -20,11 +20,11 @@ function MobileNav({ close }) {
         {
             title: "About",
             items: [
-                { to: "/overview", text: "Overview" },
-                { to: "/mission", text: "Mission & Vision" },
-                { to: "/team", text: "Management Team" },
-                { to: "/branches", text: "Our Branches" },
-                { to: "/values", text: "Core Values" }
+                { to: "/about/overview", text: "Overview" },
+                { to: "/about/mission", text: "Mission & Vision" },
+                { to: "/about/team", text: "Management Team" },
+                { to: "/about/branches", text: "Our Branches" },
+                { to: "/about/values", text: "Core Values" }
             ]
         },
         {

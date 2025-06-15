@@ -33,11 +33,11 @@ function Header() {
                                         About <i className="fa-solid fa-chevron-down" aria-hidden="true"></i>
                                     </Link>
                                     <ul className={styles.dropdown}>
-                                        <li><Link to="/overview">Overview</Link></li>
-                                        <li><Link to="/mission">Mission & Vision</Link></li>
-                                        <li><Link to="/team">Management Team</Link></li>
-                                        <li><Link to="/branches">Our Branches</Link></li>
-                                        <li><Link to="/values">Core Values</Link></li>
+                                        <li><Link to="/about/overview">Overview</Link></li>
+                                        <li><Link to="/about/mission">Mission & Vision</Link></li>
+                                        <li><Link to="/about/team">Management Team</Link></li>
+                                        <li><Link to="/about/branches">Our Branches</Link></li>
+                                        <li><Link to="/about/values">Core Values</Link></li>
                                     </ul>
                                 </li>
 

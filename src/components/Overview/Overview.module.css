@@ -1,0 +1,139 @@
+.overview {
+  padding: 4rem 0;
+  background-color: var(--pis-bg-light);
+}
+
+.topContent {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.imageWrapper {
+  flex: 1 1 40%;
+  min-width: 280px;
+}
+
+.imageWrapper img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px var(--pis-shadow);
+}
+
+.textContent {
+  flex: 1 1 55%;
+}
+
+.label {
+  display: block;
+  font-weight: 600;
+  color: var(--pis-blue);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.85rem;
+}
+
+.textContent h2 {
+  color: var(--pis-blue-dark);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.textContent p {
+  color: var(--pis-text);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.highlights {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.highlights div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--pis-blue);
+  font-weight: 600;
+}
+
+.highlights i {
+  font-size: 1.4rem;
+}
+
+.featureSection {
+  text-align: center;
+}
+
+.sectionIntro {
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+}
+
+.sectionIntro h3 {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  color: var(--pis-blue-dark);
+}
+
+.sectionIntro p {
+  color: var(--pis-text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 10px var(--pis-shadow);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--pis-yellow);
+}
+
+.card h4 {
+  color: var(--pis-blue-dark);
+  margin: 0.5rem 0;
+}
+
+.card p {
+  color: var(--pis-text);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .topContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .textContent {
+    text-align: center;
+  }
+
+  .highlights {
+    justify-content: center;
+  }
+}

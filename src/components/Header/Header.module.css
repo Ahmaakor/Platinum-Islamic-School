@@ -85,8 +85,9 @@
     pointer-events: none;
 }
 
-.dropdownParent:hover .dropdown,
-.dropdownParent:focus-within .dropdown {
+.dropdownParent:hover .dropdown
+/* .dropdownParent:focus-within .dropdown  */
+{
     display: block;
     opacity: 1;
     transform: translateY(0);
