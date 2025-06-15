@@ -1,7 +1,7 @@
 .blogsNews {
     padding: 3rem 0;
-    /* background: #f5f7fa; */
-    background: var(--pis-yellow);
+    background: #f5f7fa;
+    /* background: var(--pis-yellow); */
 }
 
 .posts {
@@ -86,7 +86,7 @@
 @media (max-width: 900px) {
     .posts {
         grid-template-columns: repeat(2, 1fr);
-        padding: 2rem;
+        padding: 0 2rem;
     }
     .postImg {
         height: 12rem;
@@ -96,6 +96,11 @@
 @media (max-width: 600px) {
     .posts {
         grid-template-columns: 1fr;
-        padding: 2rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .posts {
+        padding: 0 1rem;
     }
 }

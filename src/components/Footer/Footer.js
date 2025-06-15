@@ -4,41 +4,10 @@ function Footer() {
   return (
     <footer className={styles.footer}>
       <div className="container">
-        <div className={styles.content}>
-          <div>
+        <div className={styles.top}>
+          <div className={styles.school}>
             <h4>Platinum Islamic School</h4>
-            <p>&copy; {new Date().getFullYear()} All rights reserved.</p>
-          </div>
-          <div>
-            <h5>Quick Links</h5>
-            <ul className={styles.links}>
-              <li><strong>About</strong></li>
-              <li><a href="/about">About</a></li>
-              <li><a href="/faqs">FAQs</a></li>
-              <li><a href="/contact">Contact</a></li>
-              <li><strong>Academics</strong></li>
-              <li><a href="/curriculum">Curriculum</a></li>
-              <li><a href="/preschool">Pre-School</a></li>
-              <li><a href="/primary">Primary School</a></li>
-              <li><a href="/secondary">Secondary School</a></li>
-              <li><strong>Admissions & Activities</strong></li>
-              <li><a href="/admissions">Admissions</a></li>
-              <li><a href="/events">Events</a></li>
-              <li><a href="/gallery">Gallery</a></li>
-              <li><a href="/blog">Blogs</a></li>
-              <li><a href="/">Home</a></li>
-            </ul>
-          </div>
-          <div>
-            <p>
-              <i className="fa-solid fa-location-dot"></i> 123 School Rd, City
-            </p>
-            <p>
-              <i className="fa-solid fa-envelope"></i> info@platinumislamic.edu
-            </p>
-            <p>
-              <i className="fa-solid fa-phone"></i> +123 456 7890
-            </p>
+            <p>Ensuring a fulfilled life for your child(ren).</p>
             <div className={styles.socials}>
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                 <i className="fa-brands fa-facebook-f"></i>
@@ -51,9 +20,52 @@ function Footer() {
               </a>
             </div>
           </div>
+
+          <div className={styles.links}>
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Curriculum</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <div className={styles.links}>
+            <h3>About</h3>
+            <ul>
+              <li><a href="#">Overview</a></li>
+              <li><a href="#">Mission/Vision</a></li>
+              <li><a href="#">Branches</a></li>
+              <li><a href="#">Core Value</a></li>
+            </ul>
+          </div>
+
+          <div className={styles.links}>
+            <h3>Addmission</h3>
+            <ul>
+              <li><a href="#">Steps & Requirements</a></li>
+              <li><a href="#">School Fee</a></li>
+              <li><a href="#">Application</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
+
+          <div className={styles.contact}>
+            <h3>Contact Us</h3>
+            <p><i className="fa-solid fa-location-dot"></i> Agbogangan Mabolaje Area, Oyo, Oyo State.</p>
+            <p><i className="fa-solid fa-location-dot"></i> Alagutan Oko-Oba, Oyo, Oyo State.</p>
+            <p><i className="fa-solid fa-phone"></i> 08164172383, 08056973080</p>
+            <p><i className="fa-solid fa-envelope"></i> platinumislamic@gmail.com</p>
+          </div>
         </div>
-        <div className={styles.credits}>
-          <small>Designed by YourName</small>
+
+        <div className={styles.bottom}>
+          <p>All Rights Reserved</p>
+          <div>
+            <a href="#">Terms of use</a> | <a href="#">Privacy policy</a>
+          </div>
         </div>
       </div>
     </footer>

@@ -79,17 +79,16 @@ function Header() {
                             </ul>
                         </nav>
 
-                        <a
+                        <div
                             className={styles.hamburger}
                             onClick={toggleMobileNav}
                             aria-expanded={isMobileNavOpen}
                             aria-label="Toggle navigation"
-                            href='#'
                         >
                             <span className={styles.hamburger_icon}>
                                 <i className="fa-solid fa-bars" aria-hidden="true"></i>
                             </span>
-                        </a>
+                        </div>
 
                     </div>
                 </div>

@@ -11,7 +11,7 @@ function Hero() {
           <h1 data-aos="zoom-in">Ensuring a fulfilled life.</h1>
           <p data-aos="fade-up">Our unique curriculum blends modern academic excellence with traditional Islamic teachings, fostering intellectual growth alongside spiritual development for balanced education</p>
 
-          <div className={styles.hero_btn} data-aos="fade-up">
+          <div className={styles.hero_btn}>
             <Link to="/about" className={styles.pri_btn} >
               <span>Explore More</span>
             </Link>
