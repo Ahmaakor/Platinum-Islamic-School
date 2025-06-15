@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import styles from './MobileNav.module.css';
 import { useState, useEffect } from 'react';
+import logo from '../../assets/images/logo/pis-logo-blue.png'
 
 function MobileNav({ close }) {
     const [activeDropdown, setActiveDropdown] = useState(null);
@@ -71,7 +72,9 @@ function MobileNav({ close }) {
 
                 <nav className={styles.nav} aria-label="Mobile navigation">
                     <div className={styles.logo}>
-                        <Link to="/" onClick={closeMobileNav}>PIS</Link>
+                        <Link to="/" onClick={closeMobileNav}>
+                            <img src={logo} alt="PIS Logo" />
+                        </Link>
                     </div>
 
                     <ul className={styles.mainMenu}>

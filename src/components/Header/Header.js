@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
 import MobileNav from '../MobileNav/MobileNav';
+import logo from '../../assets/images/logo/pis-logo-blue.png'
 
 function Header() {
     const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
@@ -20,7 +21,9 @@ function Header() {
             <header className={styles.header} id="main-header">
                 <div className="container">
                     <div className={styles.navbar}>
-                        <Link to='/' className={styles.logo}>PIS</Link>
+                        <Link to='/' className={styles.logo}>
+                            <img src={logo} alt="PIS Logo" />
+                        </Link>
 
                         <nav className={styles.nav} aria-label="Main navigation">
                             <ul>

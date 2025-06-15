@@ -1,4 +1,5 @@
 import styles from './Footer.module.css';
+import logo from '../../assets/images/logo/pis-logo-cream.png'
 
 function Footer() {
   return (
@@ -6,7 +7,7 @@ function Footer() {
       <div className="container">
         <div className={styles.top}>
           <div className={styles.school}>
-            <h4>Platinum Islamic School</h4>
+            <img src={logo} alt="Platinum Islamic School Logo" />
             <p>Ensuring a fulfilled life for your child(ren).</p>
             <div className={styles.socials}>
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">

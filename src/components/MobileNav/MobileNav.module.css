@@ -64,12 +64,10 @@
     padding: 0 20px 20px;
     border-bottom: 1px solid rgba(18, 57, 123, 0.1);
 }
-
-.logo a {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--pis-blue);
-    text-decoration: none;
+.logo img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
 }
 
 .mainMenu {
