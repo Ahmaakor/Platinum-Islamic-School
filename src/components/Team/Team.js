@@ -1,19 +1,23 @@
 import styles from "./Team.module.css";
 import { teamData } from "../../data/team";
-import placeholder from "../../assets/images/i.webp"; 
+import placeholder from "../../assets/images/i.webp";
 
 function Team() {
   return (
     <section className={styles.teamSection}>
-      <div className="container">
-        <div className={styles.header}>
-          <span className={styles.label}>Meet the Leaders</span>
-          <h2>Our Management Team</h2>
-          <p>
-            The driving force behind Platinum Islamic School's success is our dedicated leadership. With a blend of experience, vision, and passion, they ensure the best for our students and staff every day.
-          </p>
+      <div className={styles.demo}>
+        <div className="container">
+          <div className={styles.header}>
+            <span className={styles.label}>Meet the Leaders</span>
+            <h2>Our Management Team</h2>
+            <p>
+              The driving force behind Platinum Islamic School's success is our dedicated leadership. With a blend of experience, vision, and passion, they ensure the best for our students and staff every day.
+            </p>
+          </div>
         </div>
+      </div>
 
+      <div className="container">
         <div className={styles.grid}>
           {teamData.map((member, idx) => (
             <div className={styles.memberCard} key={idx}>

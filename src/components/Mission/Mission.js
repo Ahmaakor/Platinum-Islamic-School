@@ -1,18 +1,22 @@
-import React from "react";
 import styles from "./Mission.module.css";
 
 function Mission() {
   return (
     <section className={styles.mission}>
-      <div className="container">
-        <div className={styles.header}>
-          <span className={styles.label}>Our Philosophy</span>
-          <h2>Mission & Vision</h2>
-          <p>
-            At Platinum Islamic School, we are dedicated to delivering academic excellence rooted in Islamic values. Our mission and vision guide every decision we make, aiming to nurture responsible global citizens who are morally upright and intellectually sound.
-          </p>
+      
+      <div className={styles.demo}>
+        <div className="container">
+          <div className={styles.header}>
+            <span className={styles.label}>Our Philosophy</span>
+            <h2>Mission & Vision</h2>
+            <p>
+              At Platinum Islamic School, we are dedicated to delivering academic excellence rooted in Islamic values. Our mission and vision guide every decision we make, aiming to nurture responsible global citizens who are morally upright and intellectually sound.
+            </p>
+          </div>
         </div>
+      </div>
 
+      <div className="container">
         <div className={styles.flexWrap}>
           <div className={styles.block}>
             <h3><i className="fas fa-bullseye"></i> Our Mission</h3>

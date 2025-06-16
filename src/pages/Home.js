@@ -1,4 +1,4 @@
-import Header from '../components/Header/Header';
+// import Header from '../components/Header/Header';
 import Hero from '../components/Hero/Hero';
 import MoreAbout from '../components/MoreAbout/MoreAbout';
 import StatsOverview from '../components/StatsOverview/StatsOverview';
@@ -6,12 +6,12 @@ import WhyChooseUs from '../components/WhyChooseUs/WhyChooseUs';
 import BlogsNews from '../components/BlogsNews/BlogsNews';
 import Events from '../components/Events/Events';
 import Testimonials from '../components/Testimonials/Testimonials';
-import Footer from '../components/Footer/Footer';
+// import Footer from '../components/Footer/Footer';
 
 function Home() {
   return (
-    <div className="App">
-      <Header />
+    <>
+      {/* <Header /> */}
       <Hero />
       <MoreAbout />
       <StatsOverview />
@@ -19,8 +19,8 @@ function Home() {
       <BlogsNews />
       <Events />
       <Testimonials />
-      <Footer />
-    </div>
+      {/* <Footer /> */}
+    </>
   );
 }
 
