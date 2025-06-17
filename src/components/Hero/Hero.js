@@ -12,7 +12,7 @@ function Hero() {
           <p data-aos="fade-up">Our unique curriculum blends modern academic excellence with traditional Islamic teachings, fostering intellectual growth alongside spiritual development for balanced education</p>
 
           <div className={styles.hero_btn} data-aos="fade-up">
-            <Link to="/about" className={styles.pri_btn} >
+            <Link to="/about/overview" className={styles.pri_btn} >
               <span>Explore More</span>
             </Link>
             <Link to="/admissions" className={styles.sec_btn}>

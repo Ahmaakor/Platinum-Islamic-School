@@ -13,11 +13,10 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.7);
+    /* backdrop-filter: blur(4px); */
     z-index: 1000;
-    opacity: 1;
-    transition: opacity 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .mobileNav {
@@ -28,12 +27,13 @@
     max-width: 340px;
     height: 100vh;
     background: linear-gradient(135deg, var(--pis-blue-light) 0%, var(--pis-cream) 100%);
+    /* background-color: white; */
     box-shadow: -4px 0 24px rgba(18, 57, 123, 0.12);
     padding: 1.5rem 0;
     z-index: 1001;
     overflow-y: auto;
     transform: translateX(-100%);
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease;
 }
 
 .mobileNav.active{

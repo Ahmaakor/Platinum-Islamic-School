@@ -45,6 +45,7 @@ body {
 
 .pri_btn{
   padding: 0.5rem 1rem;
+  /* width: fit-content; */
   color: white;
   font-size: 1rem;
   background-color: var(--pis-blue);

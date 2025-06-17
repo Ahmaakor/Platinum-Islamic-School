@@ -22,7 +22,7 @@ function Footer() {
           <div>
             <h3>Quick Links</h3>
             <ul>
-              <li><Link to="/">About</Link></li>
+              <li><Link to="/">Home</Link></li>
               <li><Link to="/">Curriculum</Link></li>
               <li><Link to="/">Blog</Link></li>
               <li><Link to="/">Events</Link></li>
@@ -31,10 +31,11 @@ function Footer() {
           <div>
             <h3>About</h3>
             <ul>
-              <li><Link to="/">Overview</Link></li>
-              <li><Link to="/">Mission/Vision</Link></li>
-              <li><Link to="/">Branches</Link></li>
-              <li><Link to="/">Core Value</Link></li>
+              <li><Link to="/about/overview">Overview</Link></li>
+              <li><Link to="/about/mission">Mission/Vision</Link></li>
+              <li><Link to="/about/team">Management Team</Link></li>
+              <li><Link to="/about/branches">Branches</Link></li>
+              <li><Link to="/about/value">Core Value</Link></li>
             </ul>
           </div>
           <div>
@@ -47,12 +48,10 @@ function Footer() {
             </ul>
           </div>
           <div>
-            <h3>Admissions</h3>
+            <h3>Gallery</h3>
             <ul>
-              <li><Link to="/">Requirements</Link></li>
-              <li><Link to="/">School Fee</Link></li>
-              <li><Link to="/">Application</Link></li>
-              <li><Link to="/">FAQs</Link></li>
+              <li><Link to="/">Image</Link></li>
+              <li><Link to="/">Video</Link></li>
             </ul>
           </div>
         </div>

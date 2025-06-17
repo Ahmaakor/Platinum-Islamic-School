@@ -1,6 +1,6 @@
 .stats_overview {
     /* background-color: var(--pis-cream, #fef6e4); */
-    background-color: var(--bs-black);
+    background-color: black;
     padding: 4rem 1rem;
 }
 

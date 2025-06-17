@@ -78,14 +78,14 @@
 }
 
 .contact{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  /* grid-template-columns: repeat(2, 1fr); */
   gap: 0.2rem;
 }
 
 .contact p,
 .policy p {
-  margin: 0.3rem 0;
+  margin: 0.2rem 0;
 }
 
 .contact i {
@@ -108,6 +108,9 @@
 }
 
 @media (max-width: 768px) {
+  .topRow{
+    text-align: left;
+  }
   .middleRow {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -119,7 +122,8 @@
   }
 
   .contact {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    /* grid-template-columns: 1fr; */
     text-align: center;
   }
 
